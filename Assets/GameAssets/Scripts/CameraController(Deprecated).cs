@@ -43,7 +43,7 @@ public class CameraController : MonoBehaviour
             lookInput += mouseDelta;
         }
 
-        // (Not Implemented yet) - Read the input from the game controller
+        // (Not Implemented yet) - Read the input from the game controller polling
         Gamepad gamepad = Gamepad.current;
         if(gamepad != null)
         {
