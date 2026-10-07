@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
             playerBody = transform.parent;
     }
 
-
     void Start()
     {
         DisableMouse();
