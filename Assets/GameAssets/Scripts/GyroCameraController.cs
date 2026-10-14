@@ -27,12 +27,12 @@ public class GyroCameraController : MonoBehaviour
             Debug.LogWarning("Your device has no Gyroscope sensor");
         }
 
-        playerInputActions.Enable();
+        playerInputActions.Player.Enable();
     }
 
     private void OnDisable()
     {
-        playerInputActions.Disable();
+        playerInputActions.Player.Disable();
     }
 
     private void OnDestroy()

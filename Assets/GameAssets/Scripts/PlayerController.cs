@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.Look.performed += OnLookPerformed;
         playerInputActions.Player.Look.canceled += OnLookCanceled;
 
-        if(!playerBody)
+        if(playerBody == null)
             playerBody = transform.parent;
     }
 
