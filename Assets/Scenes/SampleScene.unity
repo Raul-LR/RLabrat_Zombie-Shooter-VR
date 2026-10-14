@@ -423,7 +423,7 @@ MonoBehaviour:
   gamepadSensitivity: 200
   minVerticalAngle: -80
   maxVerticalAngle: 80
-  playerBody: {fileID: 0}
+  playerBody: {fileID: 1767976056}
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0
