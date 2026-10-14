@@ -47,7 +47,7 @@ public class GyroCameraController : MonoBehaviour
 
     private void ApplyGyroRotation()
     {
-        if(AttitudeSensor.current != null)
+        if(AttitudeSensor.current == null)
             return;
         
         Quaternion convertedAttitude = new Quaternion(gyroAttitude.x, gyroAttitude.y, -gyroAttitude.z, -gyroAttitude.w);
