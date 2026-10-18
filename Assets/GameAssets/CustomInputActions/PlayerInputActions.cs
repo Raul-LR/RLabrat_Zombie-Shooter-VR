@@ -111,6 +111,16 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": true,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""TestPressKey"",
+                    ""type"": ""Button"",
+                    ""id"": ""aed24ab7-d95e-4323-b7ca-3c37ed9b5d76"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -146,6 +156,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""GyroOrientation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b73f93cd-cf96-4f4b-a4c3-9db94511c2da"",
+                    ""path"": ""<Keyboard>/#(A)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TestPressKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -156,6 +177,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_GyroOrientation = m_Player.FindAction("GyroOrientation", throwIfNotFound: true);
+        m_Player_TestPressKey = m_Player.FindAction("TestPressKey", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -238,6 +260,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_GyroOrientation;
+    private readonly InputAction m_Player_TestPressKey;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -257,6 +280,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/GyroOrientation".
         /// </summary>
         public InputAction @GyroOrientation => m_Wrapper.m_Player_GyroOrientation;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/TestPressKey".
+        /// </summary>
+        public InputAction @TestPressKey => m_Wrapper.m_Player_TestPressKey;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -289,6 +316,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @GyroOrientation.started += instance.OnGyroOrientation;
             @GyroOrientation.performed += instance.OnGyroOrientation;
             @GyroOrientation.canceled += instance.OnGyroOrientation;
+            @TestPressKey.started += instance.OnTestPressKey;
+            @TestPressKey.performed += instance.OnTestPressKey;
+            @TestPressKey.canceled += instance.OnTestPressKey;
         }
 
         /// <summary>
@@ -306,6 +336,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @GyroOrientation.started -= instance.OnGyroOrientation;
             @GyroOrientation.performed -= instance.OnGyroOrientation;
             @GyroOrientation.canceled -= instance.OnGyroOrientation;
+            @TestPressKey.started -= instance.OnTestPressKey;
+            @TestPressKey.performed -= instance.OnTestPressKey;
+            @TestPressKey.canceled -= instance.OnTestPressKey;
         }
 
         /// <summary>
@@ -360,5 +393,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnGyroOrientation(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "TestPressKey" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnTestPressKey(InputAction.CallbackContext context);
     }
 }

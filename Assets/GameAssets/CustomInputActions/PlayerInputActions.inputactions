@@ -25,6 +25,16 @@
                     "interactions": "",
                     "initialStateCheck": true,
                     "priority": 0
+                },
+                {
+                    "name": "TestPressKey",
+                    "type": "Button",
+                    "id": "aed24ab7-d95e-4323-b7ca-3c37ed9b5d76",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -58,6 +68,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "GyroOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b73f93cd-cf96-4f4b-a4c3-9db94511c2da",
+                    "path": "<Keyboard>/#(A)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TestPressKey",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
