@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ed91894aa2d74a458c17d360be43a38
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 417356
+  packageName: Syringe with Water and Protective Cap
+  packageVersion: 1.0
+  assetPath: Assets/Syringe_With_Water/Materials/M_NeedleHub.mat
+  uploadId: 1020334

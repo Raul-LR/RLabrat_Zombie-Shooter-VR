@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b881a4d52b6cd924797d7c85a9ee75fa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 417356
+  packageName: Syringe with Water and Protective Cap
+  packageVersion: 1.0
+  assetPath: Assets/Syringe_With_Water/Settings/SyringePipeline.asset
+  uploadId: 1020334

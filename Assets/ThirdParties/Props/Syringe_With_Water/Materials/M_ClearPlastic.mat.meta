@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ebef3547c5370fb43be6ae3dfdf50b46
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 417356
+  packageName: Syringe with Water and Protective Cap
+  packageVersion: 1.0
+  assetPath: Assets/Syringe_With_Water/Materials/M_ClearPlastic.mat
+  uploadId: 1020334

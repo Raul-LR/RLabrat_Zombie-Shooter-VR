@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5c32a23b1f47e9840831d5928095711d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 417356
+  packageName: Syringe with Water and Protective Cap
+  packageVersion: 1.0
+  assetPath: Assets/Syringe_With_Water/Shaders/MarkedPlastic.shader
+  uploadId: 1020334

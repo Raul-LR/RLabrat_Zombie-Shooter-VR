@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 11ebe61c8769c304c9441376adff8a4d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 417356
+  packageName: Syringe with Water and Protective Cap
+  packageVersion: 1.0
+  assetPath: Assets/Syringe_With_Water/Materials/M_Steel.mat
+  uploadId: 1020334
